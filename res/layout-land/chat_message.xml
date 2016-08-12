@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.cdesign.travianrises.SidebarChat"
+    android:paddingTop="20dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:paddingBottom="20dp"
+    android:focusable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_name"
+        android:text="Contact"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close_chat"
+        android:background="@drawable/cast_ic_notification_disconnect"
+        android:layout_alignParentLeft="true"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:stackFromBottom="true"
+        android:id="@+id/chat_msgview"
+        android:layout_below="@id/contact_name"
+        android:layout_above="@+id/msg_text">
+
+    </ListView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:id="@id/msg_text"
+        android:hint="Message..."
+        android:textSize="12dp"
+        android:imeOptions="flagNoExtractUi"
+        android:maxLines="1"
+        android:inputType="text"
+        android:layout_alignParentBottom="true"/>
+
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/chat_loading"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

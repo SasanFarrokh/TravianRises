@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:state_pressed="false" >
+        <layer-list>
+            <item
+                android:height="60dp"
+                android:width="60dp"
+                android:gravity="center">
+                <bitmap android:src="@drawable/btn_optionsbar_main"  />
+            </item>
+            <item
+                android:height="44dp"
+                android:width="44dp"
+                android:gravity="center"
+                android:bottom="1dp">
+                <bitmap android:src="@drawable/ic_optionsbar_map" />
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="false" android:state_pressed="true">
+        <layer-list>
+            <item
+                android:height="60dp"
+                android:width="60dp"
+                android:gravity="center">
+                <bitmap android:src="@drawable/btn_optionsbar_main_pressed"  />
+            </item>
+            <item
+                android:height="44dp"
+                android:width="44dp"
+                android:gravity="center"
+                android:bottom="1dp">
+                <bitmap android:src="@drawable/ic_optionsbar_map" />
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item
+                android:height="60dp"
+                android:width="60dp"
+                android:gravity="center">
+                <bitmap android:src="@drawable/btn_optionsbar_main_pressed"  />
+            </item>
+            <item
+                android:height="44dp"
+                android:width="44dp"
+                android:gravity="center"
+                android:bottom="1dp">
+                <bitmap android:src="@drawable/ic_optionsbar_map" />
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

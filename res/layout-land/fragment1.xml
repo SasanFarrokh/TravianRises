@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/black">
+    <ir.cdesign.travianrises.TwoDScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="1280px"
+            android:layout_height="720px"
+            android:id="@+id/resources_container"
+            android:layout_centerInParent="true"
+            >1
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/resources_bg"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRAVIAN RISES"
+                    android:textSize="16dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:id="@+id/jsonview"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@color/black" />
+                <ToggleButton
+                    style="@style/building_circle"
+                    android:id="@+id/field_1"
+                    android:layout_marginTop="370px"
+                    android:layout_marginLeft="530px"/>
+
+
+        </RelativeLayout>
+    </ir.cdesign.travianrises.TwoDScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/build_info"
+            android:text="Info" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/build_upgrade"
+            android:text="Upgrade"
+            />
+    </LinearLayout>
+</RelativeLayout>

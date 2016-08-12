@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="false">
+        <layer-list>
+            <item>
+                <bitmap android:src="@drawable/btn_circle_glossy_orange" />
+            </item>
+            <item
+                android:drawable="@drawable/quantum_ic_clear_white_24"
+                android:top="2dp"
+                android:bottom="2dp"
+                android:right="2dp"
+                android:left="2dp">
+            </item>
+        </layer-list>
+    </item>
+    <item
+        android:state_pressed="true">
+            <layer-list>
+                <item>
+                    <rotate
+                        android:toDegrees="180"
+                        android:fromDegrees="180.0"
+                        android:pivotX="50%"
+                        android:pivotY="50%">
+                        <bitmap android:src="@drawable/btn_circle_glossy_orange" />
+                    </rotate>
+                </item>
+                <item
+                    android:drawable="@drawable/quantum_ic_clear_white_24"
+                    android:top="2dp"
+                    android:bottom="2dp"
+                    android:right="2dp"
+                    android:left="2dp">
+                </item>
+
+            </layer-list>
+
+    </item>
+</selector>

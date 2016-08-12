@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.cdesign.travianrises.SidebarChat"
+    android:padding="10dp"
+    android:focusable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/msg_title"
+        android:text="Messages"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="16dp"
+        android:fontFamily="serif"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:id="@+id/msg_to"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/msg_title"
+        android:hint="To..."
+        android:textSize="12dp"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="text"
+        android:maxLines="1"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:id="@+id/msg_text"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_below="@+id/msg_to"
+        android:hint="Message..."
+        android:textSize="12dp"
+        android:imeOptions="flagNoExtractUi"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/msg_text"
+        android:layout_marginTop="10dp"
+        android:id="@+id/chat_listview">
+    </ListView>
+
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/chat_loading"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

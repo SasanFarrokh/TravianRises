@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="15dp"
+    android:layout_margin="-5dp"
+    android:clipToPadding="false"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-16dp"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginRight="-16dp"
+        android:layout_marginBottom="-16dp"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainFrag" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tab_layout">
+        <ToggleButton
+            style="@style/tab_btn"
+            android:id="@+id/notice_btn"
+            android:background="@drawable/report_buttn"
+            android:textOn=" "
+            android:textOff=" "
+            android:onClick="tabClick"
+            android:layout_marginRight="0dp"
+            android:layout_marginEnd="0dp" />
+        <ToggleButton
+            style="@style/tab_btn"
+            android:id="@+id/rank_btn"
+            android:background="@drawable/statistics_button"
+            android:textOn=" "
+            android:textOff=" "
+            android:onClick="tabClick"/>
+        <ToggleButton
+            style="@style/tab_btn"
+            android:id="@+id/map_btn"
+            android:background="@drawable/map_button"
+            android:textOn=" "
+            android:textOff=" "
+            android:onClick="tabClick"/>
+        <ToggleButton
+            style="@style/tab_btn"
+            android:id="@+id/vil_btn"
+            android:background="@drawable/village_button"
+            android:textOn=" "
+            android:textOff=" "
+            android:onClick="tabClick"/>
+        <ToggleButton
+            style="@style/tab_btn"
+            android:background="@drawable/resources_button"
+            android:textOn=" "
+            android:textOff=" "
+            android:id="@+id/res_btn"
+            android:onClick="tabClick"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <Button
+            style="@style/right_btn"
+            android:id="@+id/quests"
+            android:text=""
+            android:onClick="openWindow"/>
+        <Button
+            style="@style/right_btn"
+            android:id="@+id/alliance"
+            android:text=""
+            android:onClick="openWindow"/>
+        <Button
+            style="@style/right_btn"
+            android:id="@+id/market"
+            android:text=""
+            android:onClick="openWindow"/>
+        <Button
+            style="@style/right_btn"
+            android:id="@+id/train_troops"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="0dp"
+            android:onClick="openWindow"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp">
+        <Button
+            style="@style/setting_btn"
+            android:id="@+id/settings"
+            android:foreground="@drawable/mr_ic_settings_light"
+            android:foregroundGravity="center"
+            android:text=""
+            android:onClick="openWindow"
+            />
+        <Button
+            style="@style/setting_btn"
+            android:id="@+id/profile"
+            android:text="2"
+            />
+        <Button
+            style="@style/setting_btn"
+            android:id="@+id/manual"
+            android:text="3"
+            />
+
+    </LinearLayout>
+
+    <Button
+        style="@style/tab_btn"
+        android:background="@drawable/village_button"
+        android:id="@+id/village_changer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="70dp"
+        android:layout_width="70dp"
+        android:text=""
+        android:onClick="openWindow"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sidebar_btn"
+        android:id="@+id/sidebar_btn4"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="-18dp" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sidebar_btn"
+        android:id="@+id/sidebar_btn3"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="-18dp" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sidebar_btn"
+        android:id="@+id/sidebar_btn2"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="-18dp" />
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/sidebar_btn"
+        android:id="@+id/sidebar_btn"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="-18dp" />
+    <FrameLayout
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-17dp"
+        android:layout_marginLeft="-176dp"
+        android:layout_marginBottom="-17dp"
+        android:id="@+id/sidebar"
+        android:background="@color/black"
+        android:clickable="false"
+        android:onClick="tabClick">
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_cloud_01"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-500dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_cloud_04"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-500dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/window"
+        android:layout_margin="0dp"
+        android:visibility="gone"
+        android:onClick="tabClick"
+        android:padding="20dp">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,243 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ir.cdesign.travianrises.SidebarHero"
+    android:background="@color/white_dark"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="20dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/hero_frame" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hero_name"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"
+                android:text="Hero"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+            <ProgressBar
+                style="@style/progress_bar"
+                android:layout_height="14dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:progress="80"
+                android:id="@+id/hero_hp" />
+            <ProgressBar
+                style="@style/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:progress="30"
+                android:id="@+id/hero_xp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hero_stat_con"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Attack Power:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90"
+                        android:textColor="@color/black"
+                        android:id="@+id/hero_free_point1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/hero_ap"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ProgressBar
+                        style="@style/hero_progressbar"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:progress="15"
+                        android:layout_gravity="top" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="0dp"
+                        android:layout_margin="0dp"
+                        android:layout_gravity="top"
+                        android:text="+"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Attack Bonus:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90"
+                        android:textColor="@color/black"
+                        android:id="@+id/hero_free_point2"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/hero_ab"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ProgressBar
+                        style="@style/hero_progressbar"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:progress="0"
+                        android:layout_gravity="top" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="0dp"
+                        android:layout_margin="0dp"
+                        android:layout_gravity="top"
+                        android:text="+"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Defense Bonus:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90"
+                        android:textColor="@color/black"
+                        android:id="@+id/hero_free_point3"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/hero_db"
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ProgressBar
+                        style="@style/hero_progressbar"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:progress="0"
+                        android:layout_gravity="top" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="0dp"
+                        android:layout_margin="0dp"
+                        android:layout_gravity="top"
+                        android:text="+"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Resource:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="90"
+                        android:textColor="@color/black"
+                        android:id="@+id/hero_free_point4"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/hero_res"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <ProgressBar
+                        style="@style/hero_progressbar"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:progress="5"
+                        android:layout_gravity="top" />
+                    <Button
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:padding="0dp"
+                        android:layout_margin="0dp"
+                        android:layout_gravity="top"
+                        android:text="+"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal">
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="t"
+                    android:layout_margin="3dp"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="t"
+                    android:layout_margin="3dp"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:text="t"
+                    android:layout_margin="3dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
